@@ -1,0 +1,41 @@
+#searchBtn {
+    size: large;
+} 
+
+.hidden {
+    display: none;
+}
+
+#weather {
+    text-align: center;
+}
+
+#todayTemp {
+    text-align: center;
+    background-color: deepskyblue;
+    box-shadow: 10px 10px;
+}
+
+
+.jumbotron {
+    background-color: deepskyblue;
+}
+
+#fun {
+    width: 100%;
+    height: 40px;
+    background-color: deepskyblue;
+}
+
+#recSearch {
+    box-shadow: 10px 10px;
+}
+
+body {
+    background-color: gray;
+}
+
+#future {
+    background-color: deepskyblue;
+    padding: 20px;
+}

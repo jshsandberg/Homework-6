@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="jumbotron">
+        <h1 id ="weather" class="display-4">Weather</h1>
+    </div>
+<br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div>
+                    <h3>Search a City</h3>
+                    <input type="text" id ="searchCity"> 
+                    <button class="btn btn-primary btn-lg" id="searchBtn">Search</button>
+                </div>
+                <br>
+                <div class="card">
+                    <div id="recSearch" class="card-body">
+                        <h1 id="textSearch">Recent Search</h1>
+                        <div id="recentSearch"></div>
+                    </div>
+                </div>                
+            </div>
+            <div class="col-8 hidden">
+                <div class="card">
+                    <div id="todayTemp" class="card-body">
+                        <div id="icon"><h2><span id="cityLocation"></span></h2><img id="wicon0" src="" alt="Weather icon"></div>
+                        <br>
+                        <p>Temperature:<span id="tempLocation"></span></p>
+                        <br>
+                        <p>Humidity:<span id="humiLocation"></span></p>
+                        <br>
+                        <p>Wind Speed:<span id="windLocation"></span></p>
+                        <br>
+                        <p>UV Index:<span id="uvIndex"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<br>
+    <div class ="container hidden">
+        <div class ="row">
+            <div id ="future" class ="col">
+                <h6 id ="date1"></h6>
+                <div id="icon"><img id="wicon1" src="" alt="Weather icon"></div>
+                <p>Temp: <span id ="temp1"></span></p>
+                <p>Humidity: <span id ="humi1"></span></p>
+            </div>
+            <div id ="future" class ="col">
+                <h6 id ="date2"></h6>
+                <div id="icon"><img id="wicon2" src="" alt="Weather icon"></div>
+                <p>Temp: <span id ="temp2"></span></p>
+                <p>Humidity: <span id ="humi2"></span></p>
+            </div>
+            <div id ="future" class ="col">
+                <h6 id ="date3"></h6>
+                <div id="icon"><img id="wicon3" src="" alt="Weather icon"></div>
+                <p>Temp: <span id ="temp3"></span></p>
+                <p>Humidity: <span id ="humi3"></span></p>
+            </div>
+            <div id ="future" class ="col">
+                <h6 id ="date4"></h6>
+                <div id="icon"><img id="wicon4" src="" alt="Weather icon"></div>
+                <p>Temp: <span id ="temp4"></span></p>
+                <p>Humidity: <span id ="humi4"></span></p>
+            </div>
+            <div id ="future" class ="col">
+                <h6 id ="date5"></h6>
+                <div id="icon"><img id="wicon5" src="" alt="Weather icon"></div>
+                <p>Temp: <span id ="temp5"></span></p>
+                <p>Humidity: <span id ="humi5"></span></p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="weather.js"></script>
+</body>
+</html>
