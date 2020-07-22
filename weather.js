@@ -39,7 +39,7 @@ function search(str) {
       }).then(function (response){
         //console.log(response);
         let uvIndex = (response.value);
-        $(`#uvIndex`).text(uvIndex);
+        $(`#uvIndex`).text(` ${uvIndex}`);
       })
     let city = (response.name)
     $(`#cityLocation`).text(`${city}`)
