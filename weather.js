@@ -32,7 +32,7 @@ function search(str) {
     $(`#windLocation`).text(` ${windSpeed} MPH`);
     let lat = (response.coord.lat);
     let lon = (response.coord.lon);
-    let queryURL_3 = `http://api.openweathermap.org/data/2.5/uvi?appid=28d57d24aa77f51c32840ff10cb9e437&lat=` + lat + `&lon=` + lon + ``;
+    let queryURL_3 = `https://api.openweathermap.org/data/2.5/uvi?appid=28d57d24aa77f51c32840ff10cb9e437&lat=` + lat + `&lon=` + lon + ``;
       $.ajax({
         url: queryURL_3,
         method: "GET",
