@@ -32,7 +32,7 @@ function search(str) {
     $(`#windLocation`).text(` ${windSpeed} MPH`);
     let lat = (response.coord.lat);
     let lon = (response.coord.lon);
-    let queryURL_3 = `https://api.openweathermap.org/data/2.5/uvi?appid=28d57d24aa77f51c32840ff10cb9e437&lat=` + lat + `&lon=` + lon + ``;
+    let queryURL_3 = `https://api.openweathermap.org/data/2.5/uvi?appid=28d57d24aa77f51c32840ff10cb9e437&lat=` + lat + `&lon=` + lon;
       $.ajax({
         url: queryURL_3,
         method: "GET",
@@ -44,7 +44,7 @@ function search(str) {
     let city = (response.name)
     $(`#cityLocation`).text(`${city}`)
     let iconcode0 = response.weather[0].icon;
-    let iconurl0 = "http://openweathermap.org/img/w/" + iconcode0 + ".png";
+    let iconurl0 = "https://openweathermap.org/img/w/" + iconcode0 + ".png";
     $('#wicon0').attr('src', iconurl0);
     //console.log(response)
     $.ajax({
@@ -60,7 +60,7 @@ function search(str) {
     for (let i = 1; i < 6; i++) {
       let index = i * 8 - 3;
       $(`#date${i}`).text(list[index].dt_txt);
-      $(`#wicon${i}`).attr('src', `http://openweathermap.org/img/w/${list[index].weather[0].icon}.png`);
+      $(`#wicon${i}`).attr('src', `https://openweathermap.org/img/w/${list[index].weather[0].icon}.png`);
       let kelvin = (list[index].main.temp);
       let celsius = kelvin - 273;
       let temp = Math.floor(celsius * (9/5) + 32);
